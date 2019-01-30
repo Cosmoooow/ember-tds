@@ -4,8 +4,9 @@ import EmberObject, {computed} from '@ember/object';
 const Note=EmberObject.extend({
   content: 'Aucun',
   MAX: 100,
-  info: '"',
+  info: null,
   size: computed('content', function () {
+    this.set('info',null);
     return this.MAX - this.content.length;
   }),
   style: computed('size',function(){
