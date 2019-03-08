@@ -1,4 +1,4 @@
-import Route from '@ember/routing/route';
+import Route from '@ember/routing/route';             //Problème de ESLint avec WebStorm qui fait que les import déconnent
 import EmberObject, {computed} from '@ember/object';
 
 const Note=EmberObject.extend({
